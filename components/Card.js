@@ -1,9 +1,8 @@
 import React from 'react';
-import { StyleSheet, Text, View, TextInput, Button } from 'react-native';
+import { View, StyleSheet } from 'react-native';
 
-const Cards = (props) => {
+const Card = props => {
   return (
-    // take all my style and overwhrite all my style + pass the new style
     <View style={{ ...styles.card, ...props.style }}>{props.children}</View>
   );
 };
@@ -17,8 +16,8 @@ const styles = StyleSheet.create({
     elevation: 8,
     backgroundColor: 'white',
     padding: 20,
-    borderRadius: 10,
-  },
+    borderRadius: 10
+  }
 });
 
-export default Cards;
+export default Card;
